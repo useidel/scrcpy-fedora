@@ -1,6 +1,6 @@
 %define         pkgname         scrcpy
 %global         forgeurl        https://github.com/Genymobile/%{pkgname}
-Version:        1.24
+Version:        1.25
 
 %forgemeta -i
 
@@ -51,6 +51,21 @@ connected on USB (or over TCP/IP).
 
 
 %changelog
+* Thu Dec 22 2022 Udo Seidel <udoseidel@gmx.de> 1.25-1
+- Adapt copy-paste internals for Android 13 (#3497)
+- Add support for high-precision scrolling (#3363, #3369)
+- Add desktop entry files for Linux (#295, #296, #748, #1636, #3351)
+- Add bash and zsh autocompletion for -s/--serial (#3522, #3523)
+- Use current adb port (if any) for --tcpip (#3591, #3592)
+- Add fallback to get display information on some devices (#3416, #3573)
+- Fix click behavior when --forward-all-clicks is set (#3568, #3579)
+- Fix support for non-ASCII characters in window title (#2932, #3547)
+- Fix getDisplayIds() crash on some versions of Android 13 beta (#3446)
+- Upgrade platform-tools to 33.0.3 (adb) in Windows releases
+- Upgrade FFmpeg to 5.1.2 in Windows 64-bit releases
+- Upgrade SDL to 2.26.1 in Windows releases
+- Various technical fixes
+
 * Fri Apr 29 2022 Udo Seidel <udoseidel@gmx.de> 1.24-1
 - Adapt input injection for Android 13 (#3186, #3190)
 - Add --no-power-on (#3148, #3210)
