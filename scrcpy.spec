@@ -48,6 +48,7 @@ connected on USB (or over TCP/IP).
 %{_datadir}/icons/hicolor/*/apps/%{pkgname}.png
 %{_datadir}/bash-completion/completions/%{pkgname}
 %{_datadir}/zsh/site-functions/_%{pkgname}
+%{_datadir}/applications/%{pkgname}*.desktop
 
 
 %changelog
