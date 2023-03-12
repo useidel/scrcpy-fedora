@@ -41,7 +41,7 @@ connected on USB (or over TCP/IP).
 
 %files
 %license LICENSE
-%doc README.md DEVELOP.md FAQ.md
+%doc README.md FAQ.md
 %{_bindir}/%{pkgname}
 %{_datadir}/%{pkgname}
 %{_mandir}/man1/%{pkgname}.1*
