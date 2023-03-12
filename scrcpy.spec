@@ -1,6 +1,6 @@
 %define         pkgname         scrcpy
 %global         forgeurl        https://github.com/Genymobile/%{pkgname}
-Version:        1.25
+Version:        2.0
 
 %forgemeta -i
 
@@ -52,6 +52,18 @@ connected on USB (or over TCP/IP).
 
 
 %changelog
+* Sun Mar 12 2023 Udo Seidel <udoseidel@gmx.de> 2.0-1
+- Add Audio forwarding (#14, #3757)
+- Add H265 and AV1 video codec support (#3713)
+- Add --list-displays and --list-encoders
+- Fix clicks on Chrome when --forward-on-clicks is enabled (#3635)
+- Retry on spurious encoder error (#3693)
+- Make --turn-screen-off work on all displays (#3716)
+- Restore resizing workaround for Windows (#3640)
+- Upgrade platform-tools to 34.0.1 (adb) in Windows releases
+- Upgrade FFmpeg to 6.0 in Windows releases (and use a minimal build)
+- Upgrade SDL to 2.26.4 in Windows releases
+
 * Thu Dec 22 2022 Udo Seidel <udoseidel@gmx.de> 1.25-1
 - Adapt copy-paste internals for Android 13 (#3497)
 - Add support for high-precision scrolling (#3363, #3369)
