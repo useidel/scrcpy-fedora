@@ -1,6 +1,6 @@
 %define         pkgname         scrcpy
 %global         forgeurl        https://github.com/Genymobile/%{pkgname}
-Version:        2.0
+Version:        2.1
 
 %forgemeta -i
 
@@ -52,6 +52,33 @@ connected on USB (or over TCP/IP).
 
 
 %changelog
+* Thu Jun 22 2023 Udo Seidel <udoseidel@gmx.de> 2.1-1
+- Add --no-video to mirror audio only (#3978 [github.com])
+- Add option to select the device microphone as audio source (#4044 [github.com])
+- Rename --no-display to --no-playback (#4033 [github.com])
+- Add --no-video-playback and --no-audio-playback (#4033 [github.com])
+- Add --time-limit to automatically stop after a given delay (#3752 [github.com], #4052 [github.com])
+- Add option to change the audio output buffer size (#3793 [github.com])
+- Add option to kill adb on close (#205 [github.com], #2580 [github.com], #4049 [github.com])
+- Support dynamic device folding (#3960 [github.com], #3979 [github.com])
+- Use OpenGL 3.0+ on macOS to support trilinear filtering (#3895 [github.com])
+- Add (partial) support for Android 14 (#3784 [github.com], #4074 [github.com], #4075 [github.com])
+- Improve delay buffer estimation (2f9396e [github.com])
+- Fix --tcpip not working in some cases (669e9a8 [github.com])
+- Fix audio support for Vivo phones (#3805 [github.com], #3862 [github.com])
+- Fix audio support for Honor phones (#4015 [github.com])
+- Fix copy-paste on Honor Magic 5 Pro (#3885 [github.com])
+- Fix audio capture starting on some Android 11+ devices (#3796 [github.com])
+- Fix V4L2 regression (#3795 [github.com])
+- Fix support of Nvidia Shield (#3801 [github.com])
+- Fix .desktop files for Linux (#3817 [github.com])
+- Fix error on device rotation while minimized on Windows (#3947 [github.com])
+- Fix extra audio glitches on audio buffer underflow (#4045 [github.com])
+- Automatically fix PTS for buggy device encoders (#4054 [github.com])
+- Upgrade SDL to 2.28 in Windows releases (#3825 [github.com])
+- Update developer documentation (#3811 [github.com])
+- Various technical fixes
+
 * Sun Mar 12 2023 Udo Seidel <udoseidel@gmx.de> 2.0-1
 - Add Audio forwarding (#14, #3757)
 - Add H265 and AV1 video codec support (#3713)
