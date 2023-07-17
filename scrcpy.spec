@@ -1,6 +1,6 @@
 %define         pkgname         scrcpy
 %global         forgeurl        https://github.com/Genymobile/%{pkgname}
-Version:        2.1
+Version:        2.1.1
 
 %forgemeta -i
 
@@ -52,6 +52,12 @@ connected on USB (or over TCP/IP).
 
 
 %changelog
+* Mon Jul 17 2023 Udo Seidel <udoseidel@gmx.de> 2.1.1-1
+- Ignore fold change events for other display ids (#4120)
+- Fix Meizu deadlock (#4143, #4146)
+- Fix possible division by zero (#4115)
+- Increase attempts to start AudioRecord (#4147)
+
 * Thu Jun 22 2023 Udo Seidel <udoseidel@gmx.de> 2.1-1
 - Add --no-video to mirror audio only (#3978 [github.com])
 - Add option to select the device microphone as audio source (#4044 [github.com])
