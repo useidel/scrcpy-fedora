@@ -1,6 +1,6 @@
 %define         pkgname         scrcpy
 %global         forgeurl        https://github.com/Genymobile/%{pkgname}
-Version:        2.1.1
+Version:        2.2.0
 
 %forgemeta -i
 
@@ -52,6 +52,16 @@ connected on USB (or over TCP/IP).
 
 
 %changelog
+* Wed Nov 01 2023 Udo Seidel <udoseidel@gmx.de> 2.2.0-1
+- Add option to mirror camera (#241 [github.com], #4213 [github.com])
+- Add --pause-on-exit (#4130 [github.com])
+- Rename --display (deprecated) to --display-id
+- Fix device disconnection detection with --no-video (#4207 [github.com])
+- Accept --turn-screen-off without video playback (#4175 [github.com])
+- Upgrade SDL to 2.28.4 in Windows releases
+- Upgrade platform-tools to 34.0.5 (adb) in Windows releases
+- Various technical fixes
+
 * Mon Jul 17 2023 Udo Seidel <udoseidel@gmx.de> 2.1.1-1
 - Ignore fold change events for other display ids (#4120)
 - Fix Meizu deadlock (#4143, #4146)
