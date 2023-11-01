@@ -1,6 +1,6 @@
 %define         pkgname         scrcpy
 %global         forgeurl        https://github.com/Genymobile/%{pkgname}
-Version:        2.2.0
+Version:        2.2
 
 %forgemeta -i
 
@@ -52,7 +52,8 @@ connected on USB (or over TCP/IP).
 
 
 %changelog
-* Wed Nov 01 2023 Udo Seidel <udoseidel@gmx.de> 2.2.0-1
+* Wed Nov 01 2023 Udo Seidel <udoseidel@gmx.de> 2.2-1
+- back to the original versioning schema
 - Add option to mirror camera (#241 [github.com], #4213 [github.com])
 - Add --pause-on-exit (#4130 [github.com])
 - Rename --display (deprecated) to --display-id
