@@ -1,6 +1,6 @@
 %define         pkgname         scrcpy
 %global         forgeurl        https://github.com/Genymobile/%{pkgname}
-Version:        2.2
+Version:        2.3
 
 %forgemeta -i
 
@@ -52,6 +52,19 @@ connected on USB (or over TCP/IP).
 
 
 %changelog
+* Sun Nov 26 2023 Udo Seidel <udoseidel@gmx.de> 2.3-1
+- Add flipped display orientation (#1380 [github.com], #3819 [github.com], #4441 [github.com])
+- Add recording rotation (#4441 [github.com])
+- Add FLAC audio codec (#4410 [github.com])
+- Add raw audio (WAV) recording (2004881 [github.com])
+- Fix turn screen off for Android 14 (#3927 [github.com], #4456 [github.com])
+- Fix camera issues on many devices (#4392 [github.com])
+- Fix clipboard synchronization when no video (#4418 [github.com])
+- Fix screen refresh on device rotation (7e3b935 [github.com])
+- Fix .desktop files on Linux (#4448 [github.com])
+- Upgrade SDL to 2.28.5 in Windows releases
+- Various technical fixes
+
 * Wed Nov 01 2023 Udo Seidel <udoseidel@gmx.de> 2.2-1
 - back to the original versioning schema
 - Add option to mirror camera (#241 [github.com], #4213 [github.com])
