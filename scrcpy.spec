@@ -15,6 +15,7 @@ Source1:        https://github.com/Genymobile/%{pkgname}/releases/download/v%{ve
 
 BuildRequires:  meson gcc cmake
 BuildRequires:  java-devel >= 11
+BuildRequires:  libusb1-devel ffmpeg-devel
 
 BuildRequires:  pkgconfig(sdl2)
 BuildRequires:  pkgconfig(ffms2)
@@ -53,7 +54,7 @@ connected on USB (or over TCP/IP).
 
 %changelog
 * Sun Nov 26 2023 Udo Seidel <udoseidel@gmx.de> 2.3-2
-- cmake added to build requirements 
+- cmake, ffmpeg-devel and libusb1-devel added to build requirements 
 
 * Sun Nov 26 2023 Udo Seidel <udoseidel@gmx.de> 2.3-1
 - Add flipped display orientation (#1380 [github.com], #3819 [github.com], #4441 [github.com])
