@@ -5,7 +5,7 @@ Version:        2.3
 %forgemeta -i
 
 Name:           %{pkgname}
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Display and control your Android device
 License:        ASL 2.0
 
@@ -13,7 +13,7 @@ URL:            %{forgeurl}
 Source0:        %{forgesource}
 Source1:        https://github.com/Genymobile/%{pkgname}/releases/download/v%{version}/%{pkgname}-server-v%{version}
 
-BuildRequires:  meson gcc
+BuildRequires:  meson gcc cmake
 BuildRequires:  java-devel >= 11
 
 BuildRequires:  pkgconfig(sdl2)
@@ -52,6 +52,9 @@ connected on USB (or over TCP/IP).
 
 
 %changelog
+* Sun Nov 26 2023 Udo Seidel <udoseidel@gmx.de> 2.3-2
+- cmake added to build requirements 
+
 * Sun Nov 26 2023 Udo Seidel <udoseidel@gmx.de> 2.3-1
 - Add flipped display orientation (#1380 [github.com], #3819 [github.com], #4441 [github.com])
 - Add recording rotation (#4441 [github.com])
