@@ -1,11 +1,11 @@
 %define         pkgname         scrcpy
 %global         forgeurl        https://github.com/Genymobile/%{pkgname}
-Version:        2.3
+Version:        2.3.1
 
 %forgemeta -i
 
 Name:           %{pkgname}
-Release:        2%{?dist}
+Release:        1%{?dist}
 Summary:        Display and control your Android device
 License:        ASL 2.0
 
@@ -53,6 +53,12 @@ connected on USB (or over TCP/IP).
 
 
 %changelog
+* Sat Dec 02 2023 Udo Seidel <udoseidel@gmx.de> 2.3.1-1
+- Add workaround for issues on Samsung devices (#4467 [github.com])
+- Fix error in a headless environment without display (#4477 [github.com])
+- Fix AV1 demuxing (#4487 [github.com])
+- Fix build issue on macOS (4135c41 [github.com])
+
 * Sun Nov 26 2023 Udo Seidel <udoseidel@gmx.de> 2.3-2
 - cmake, ffmpeg-devel and libusb1-devel added to build requirements 
 
