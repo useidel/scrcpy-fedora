@@ -1,6 +1,6 @@
 %define         pkgname         scrcpy
 %global         forgeurl        https://github.com/Genymobile/%{pkgname}
-Version:        2.3.1
+Version:        2.4
 
 %forgemeta -i
 
@@ -53,6 +53,20 @@ connected on USB (or over TCP/IP).
 
 
 %changelog
+* Sun Mar 03 2024 Udo Seidel <udoseidel@gmx.de> 2.4-1
+- Add UHID keyboard and mouse support (#4473)
+- Simulate tilt multitouch by pressing Shift (#4529)
+- Add rotation support for non-default display (#4698)
+- Improve audio player (#4572)
+- Adapt to display API changes in Android 15 (#4646, #4656, #4657)
+- Adapt audio workarounds to Android 14 (#4492)
+- Fix clipboard for IQOO devices on Android 14 (#4492, #4589, #4703)
+- Fix integer overflow for audio packet duration (#4536)
+- Rework cleanup (#4649)
+- Upgrade FFmpeg to 6.1.1 in Windows releases (#4713)
+- Upgrade libusb to 1.0.27 in Windows releases (#4713)
+- Various technical fixes
+
 * Sat Dec 02 2023 Udo Seidel <udoseidel@gmx.de> 2.3.1-1
 - Add workaround for issues on Samsung devices (#4467 [github.com])
 - Fix error in a headless environment without display (#4477 [github.com])
