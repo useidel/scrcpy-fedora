@@ -1,6 +1,6 @@
 %define         pkgname         scrcpy
 %global         forgeurl        https://github.com/Genymobile/%{pkgname}
-Version:        2.4
+Version:        2.5
 
 %forgemeta -i
 
@@ -53,6 +53,22 @@ connected on USB (or over TCP/IP).
 
 
 %changelog
+* Sat Jun 29 2024 Udo Seidel <udoseidel@gmx.de> 2.5-1
+- Add scrcpy window without video playback (#4727 [github.com], #4793 [github.com], #4868 [github.com])
+- Add a shortcut to pause/unpause display (#1632 [github.com], #4748 [github.com])
+- Forward mouse hover events (#2743 [github.com], #3070 [github.com], #5039 [github.com])
+- Add option to configure mouse bindings (#5022 [github.com])
+- Forward all clicks by default for UHID/AOA (#5022 [github.com])
+- Simplify shortcut modifiers (#4741 [github.com])
+- Fix rotation shortcut for Android 14 (#4740 [github.com], #4841 [github.com])
+- Fix YUV conversion for full color range (#4756 [github.com])
+- Fix camera sizes listing on some devices (#4852 [github.com])
+- Fix thread leak on Windows (#4973 [github.com])
+- Upgrade FFmpeg to 7.0.1 in Windows releases
+- Upgrade SDL to 2.30.4 in Windows releases
+- Upgrade platform-tools (adb) to 35.0.0 in Windows releases
+- Various technical fixes
+
 * Sun Mar 03 2024 Udo Seidel <udoseidel@gmx.de> 2.4-1
 - Add UHID keyboard and mouse support (#4473)
 - Simulate tilt multitouch by pressing Shift (#4529)
