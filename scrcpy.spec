@@ -1,6 +1,6 @@
 %define         pkgname         scrcpy
 %global         forgeurl        https://github.com/Genymobile/%{pkgname}
-Version:        2.5
+Version:        2.6
 
 %forgemeta -i
 
@@ -53,6 +53,19 @@ connected on USB (or over TCP/IP).
 
 
 %changelog
+* Thu Aug 01 2024 Udo Seidel <udoseidel@gmx.de> 2.6-1
+- Add audio playback capture method (#4380, #5102)
+- Add audio duplication feature (#3875, #4380, #5102)
+- Add mouse secondary bindings with Shift+click (#5055, #5076)
+- Rework mouse events (#5067, #5076)
+- Fix "turn screen off" for Honor devices (#4823, #4943, #5109)
+- Add clipboard workaround for Honor devices (#4822, #5073)
+- Always apply device workarounds (#4922, #5140, #5148, #5154)
+- Fix missing initialization (#5057, #5058)
+- Do not report error on device disconnected (#5044)
+- Upgrade SDL to 2.30.5 in Windows releases
+- Various technical fixes
+
 * Sat Jun 29 2024 Udo Seidel <udoseidel@gmx.de> 2.5-1
 - Add scrcpy window without video playback (#4727 [github.com], #4793 [github.com], #4868 [github.com])
 - Add a shortcut to pause/unpause display (#1632 [github.com], #4748 [github.com])
