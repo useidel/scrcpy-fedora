@@ -1,6 +1,6 @@
 %define         pkgname         scrcpy
 %global         forgeurl        https://github.com/Genymobile/%{pkgname}
-Version:        2.6
+Version:        2.6.1
 
 %forgemeta -i
 
@@ -53,6 +53,9 @@ connected on USB (or over TCP/IP).
 
 
 %changelog
+* Thu Aug 03 2024 Udo Seidel <udoseidel@gmx.de> 2.6.1-1
+- Inject finger input whenever possible (#5162 [github.com], #5163
+
 * Thu Aug 01 2024 Udo Seidel <udoseidel@gmx.de> 2.6-1
 - Add audio playback capture method (#4380, #5102)
 - Add audio duplication feature (#3875, #4380, #5102)
