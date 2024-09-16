@@ -1,6 +1,6 @@
 %define         pkgname         scrcpy
 %global         forgeurl        https://github.com/Genymobile/%{pkgname}
-Version:        2.7.0
+Version:        2.7
 
 %forgemeta -i
 
@@ -53,7 +53,7 @@ connected on USB (or over TCP/IP).
 
 
 %changelog
-* Mon Sep 16 2024 Udo Seidel <udoseidel@gmx.de> 2.7.0-1
+* Mon Sep 16 2024 Udo Seidel <udoseidel@gmx.de> 2.7-1
 - Add gamepad support (#99 [github.com], #2130 [github.com], #5270 [github.com])
 - Fix workarounds for ONYX devices (#5182 [github.com])
 - Accept float values for --max-fps (265a15e [github.com])
