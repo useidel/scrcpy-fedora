@@ -1,6 +1,6 @@
 %define         pkgname         scrcpy
 %global         forgeurl        https://github.com/Genymobile/%{pkgname}
-Version:        3.0.1
+Version:        3.0.2
 
 %forgemeta -i
 
@@ -53,6 +53,9 @@ connected on USB (or over TCP/IP).
 
 
 %changelog
+* Thu Dec 05 2024 Udo Seidel <udoseidel@gmx.de> 3.0.2-1
+- Fix version (#5602 [github.com])
+
 * Thu Dec 05 2024 Udo Seidel <udoseidel@gmx.de> 3.0.1-1
 - Set main display power for virtual display (#5522 [github.com])
 - Rollback to old --turn-screen-off method for Android 15 (#5530 [github.com])
