@@ -1,6 +1,6 @@
 %define         pkgname         scrcpy
 %global         forgeurl        https://github.com/Genymobile/%{pkgname}
-Version:        3.0
+Version:        3.0.1
 
 %forgemeta -i
 
@@ -53,6 +53,18 @@ connected on USB (or over TCP/IP).
 
 
 %changelog
+* Thu Dec 05 2024 Udo Seidel <udoseidel@gmx.de> 3.0.1-1
+- Set main display power for virtual display (#5522 [github.com])
+- Rollback to old --turn-screen-off method for Android 15 (#5530 [github.com])
+- Do not reset TCP/IP connections (#5562 [github.com])
+- Fix socket interruption on macOS (#5536 [github.com])
+- Fix NullPointerException on certain devices (#5537 [github.com])
+- Fix camera capture failure without retry (#5539 [github.com])
+- Accept control events without display (#5542 [github.com])
+- Build macOS x86_64 release (#5526 [github.com])
+- Fix .tar.gz compression for release tarballs (#5581 [github.com])
+- Call static binary without wrapper script (#5560 [github.com])
+
 * Sun Nov 24 2024 Udo Seidel <udoseidel@gmx.de> 3.0-1
 - Add virtual display feature (#5370, #5506, #1887, #4528, #5137)
 - Launch Android app on start (#5370)
