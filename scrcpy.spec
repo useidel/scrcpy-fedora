@@ -1,6 +1,6 @@
 %define         pkgname         scrcpy
 %global         forgeurl        https://github.com/Genymobile/%{pkgname}
-Version:        3.0.2
+Version:        3.1
 
 %forgemeta -i
 
@@ -53,6 +53,15 @@ connected on USB (or over TCP/IP).
 
 
 %changelog
+* Tue Dec 10 2024 Udo Seidel <udoseidel@gmx.de> 3.1-1
+- Add --no-vd-destroy-content (#5615 [github.com])
+- Improve gamepad support in games (#5623 [github.com], #5362 [github.com])
+- Inject events to main display (#5614 [github.com], #5545 [github.com], #5605 [github.com], #5616 [github.com])
+- Fix "turn screen off" on some devices (#4544 [github.com], #5274 [github.com])
+- Improve cleanup reliability (#5613 [github.com], #5601 [github.com])
+- Add dav1d in release builds (#5644 [github.com], #4744 [github.com])
+- Upgrade SDL to 2.30.10
+
 * Thu Dec 05 2024 Udo Seidel <udoseidel@gmx.de> 3.0.2-1
 - Fix version (#5602 [github.com])
 
