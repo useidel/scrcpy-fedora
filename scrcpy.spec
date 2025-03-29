@@ -1,6 +1,6 @@
 %define         pkgname         scrcpy
 %global         forgeurl        https://github.com/Genymobile/%{pkgname}
-Version:        3.1
+Version:        3.2
 
 %forgemeta -i
 
@@ -53,6 +53,21 @@ connected on USB (or over TCP/IP).
 
 
 %changelog
+* Sat Mar 29 2025 Udo Seidel <udoseidel@gmx.de> 3.2-1
+- Add many audio sources (#5870 [github.com], #5412 [github.com], #5670 [github.com])
+- Improve/fix camera listing (#5669 [github.com])
+- Add --display-ime-policy (#5703 [github.com])
+- Allow controls with --no-window (#5803 [github.com], #5804 [github.com])
+- Add workaround for Pico 4 Ultra (#5659 [github.com])
+- Fix rotation after a recent Android 15 upgrade (#5908 [github.com])
+- Fix audio capture on Android 16 (#5698 [github.com])
+- Make static Linux binaries compatible with older versions (#5689 [github.com])
+- Make static macOS binaries compatible with older versions (#5649 [github.com], #5697 [github.com])
+- Upgrade FFmpeg to 7.1.1
+- Upgrade libusb to 1.0.28
+- Upgrade SDL to 2.32.2
+- Various technical fixes
+
 * Tue Dec 10 2024 Udo Seidel <udoseidel@gmx.de> 3.1-1
 - Add --no-vd-destroy-content (#5615 [github.com])
 - Improve gamepad support in games (#5623 [github.com], #5362 [github.com])
