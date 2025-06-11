@@ -1,6 +1,6 @@
 %define         pkgname         scrcpy
 %global         forgeurl        https://github.com/Genymobile/%{pkgname}
-Version:        3.2
+Version:        3.3
 
 %forgemeta -i
 
@@ -53,6 +53,18 @@ connected on USB (or over TCP/IP).
 
 
 %changelog
+* Wed Jun 11 2025 Udo Seidel <udoseidel@gmx.de> 3.3-1
+- Associate UHID devices to virtual displays (#4829 [github.com], #5547 [github.com], #5557 [github.com], #6009 [github.com])
+- Fix audio capture (again) on Android 16 (#6021 [github.com])
+- Fix segfault with --no-window without --no-control (#5970 [github.com])
+- Fix default locked capture orientation (#6010 [github.com])
+- Add app name SDL hint (#6107 [github.com])
+- Report specific error for INJECT_EVENT permission (#6080 [github.com])
+- Upgrade platform-tools (adb) to 36.0.0
+- Upgrade SDL to 2.32.8
+- Upgrade libusb to 1.0.29
+- Various technical fixes
+
 * Sat Mar 29 2025 Udo Seidel <udoseidel@gmx.de> 3.2-1
 - Add many audio sources (#5870 [github.com], #5412 [github.com], #5670 [github.com])
 - Improve/fix camera listing (#5669 [github.com])
