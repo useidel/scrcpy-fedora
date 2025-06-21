@@ -1,6 +1,6 @@
 %define         pkgname         scrcpy
 %global         forgeurl        https://github.com/Genymobile/%{pkgname}
-Version:        3.3
+Version:        3.3.1
 
 %forgemeta -i
 
@@ -53,6 +53,13 @@ connected on USB (or over TCP/IP).
 
 
 %changelog
+* Sat Jun 21 2025 Udo Seidel <udoseidel@gmx.de> 3.3.1-1
+- Fix --power-off-on-close (#6146 [github.com])
+- Fix clipboard with --no-clipboard-autosync (#6151 [github.com])
+- Fix --list-apps and --list-cameras (#6165 [github.com], #6167 [github.com])
+- Fix HID mouse support with SDL precise scrolling (#6156 [github.com], #6172 [github.com])
+- Add horizontal scrolling support for HID mouse (#6172 [github.com])
+
 * Wed Jun 11 2025 Udo Seidel <udoseidel@gmx.de> 3.3-1
 - Associate UHID devices to virtual displays (#4829 [github.com], #5547 [github.com], #5557 [github.com], #6009 [github.com])
 - Fix audio capture (again) on Android 16 (#6021 [github.com])
