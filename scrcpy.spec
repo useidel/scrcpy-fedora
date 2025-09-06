@@ -1,6 +1,6 @@
 %define         pkgname         scrcpy
 %global         forgeurl        https://github.com/Genymobile/%{pkgname}
-Version:        3.3.1
+Version:        3.3.2
 
 %forgemeta -i
 
@@ -53,6 +53,12 @@ connected on USB (or over TCP/IP).
 
 
 %changelog
+* Sat Sep 06 2025 Udo Seidel <udoseidel@gmx.de> 3.3.2-1
+- Fix virtual display after Android 16 upgrade (#6234 [github.com], #6331 [github.com])
+- Workaround clipboard issue on Samsung devices (#6224 [github.com])
+- Catch CTRL_BREAK_EVENT signal on Windows (#6244 [github.com])
+- Various technical fixes
+
 * Sat Jun 21 2025 Udo Seidel <udoseidel@gmx.de> 3.3.1-1
 - Fix --power-off-on-close (#6146 [github.com])
 - Fix clipboard with --no-clipboard-autosync (#6151 [github.com])
