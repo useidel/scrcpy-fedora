@@ -1,6 +1,6 @@
 %define         pkgname         scrcpy
 %global         forgeurl        https://github.com/Genymobile/%{pkgname}
-Version:        3.3.2
+Version:        3.3.3
 
 %forgemeta -i
 
@@ -53,6 +53,11 @@ connected on USB (or over TCP/IP).
 
 
 %changelog
+* Sat Sep 27 2025 Udo Seidel <udoseidel@gmx.de> 3.3.3-1
+- Fix immediate error after new Android 16 upgrade (#6362 [github.com])
+- Fix frame memory leak on Windows in specific cases (#4297 [github.com], #6357 [github.com])
+- Make virtual display presentable (#6344 [github.com])
+
 * Sat Sep 06 2025 Udo Seidel <udoseidel@gmx.de> 3.3.2-1
 - Fix virtual display after Android 16 upgrade (#6234 [github.com], #6331 [github.com])
 - Workaround clipboard issue on Samsung devices (#6224 [github.com])
