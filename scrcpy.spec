@@ -1,6 +1,6 @@
 %define         pkgname         scrcpy
 %global         forgeurl        https://github.com/Genymobile/%{pkgname}
-Version:        3.3.3
+Version:        3.3.4
 
 %forgemeta -i
 
@@ -53,6 +53,15 @@ connected on USB (or over TCP/IP).
 
 
 %changelog
+* Thu Dec 18 2025 Udo Seidel <udoseidel@gmx.de> 3.3.4-1
+- Fix permission denial error after Android upgrade (#6523 [github.com])
+- Fix state restoration on certain devices (#6405 [github.com], #6540 [github.com])
+- Fix UHID_OUTPUT message parsing (#6415 [github.com])
+- Fix failure when the uniqueId field is missing on certain devices (#6461 [github.com])
+- Fix error log interleaving (#6487 [github.com])
+- Fix startup issue on certain Meizu devices (#6480 [github.com])
+- Fix handling of non-integer ANDROID_PLATFORM in build script (#6408 [github.com])
+
 * Sat Sep 27 2025 Udo Seidel <udoseidel@gmx.de> 3.3.3-1
 - Fix immediate error after new Android 16 upgrade (#6362 [github.com])
 - Fix frame memory leak on Windows in specific cases (#4297 [github.com], #6357 [github.com])
