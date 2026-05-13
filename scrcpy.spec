@@ -1,6 +1,6 @@
 %define         pkgname         scrcpy
 %global         forgeurl        https://github.com/Genymobile/%{pkgname}
-Version:        3.3.4
+Version:        4.0
 
 %forgemeta -i
 
@@ -53,6 +53,48 @@ connected on USB (or over TCP/IP).
 
 
 %changelog
+* Wed May 13 2026 Udo Seidel <udoseidel@gmx.de> 4.0-1
+- Migrate from SDL2 to SDL3 (#6216 [github.com])
+- Add flex display support (#6772 [github.com])
+- Add camera torch and zoom support (#6243 [github.com])
+- Enforce window aspect ratio (#6761 [github.com], #6774 [github.com], #2317 [github.com], #2387 [github.com], #3460 [github.com])
+- Add --keep-active (#6792 [github.com], #6787 [github.com])
+- Add --background-color (#6807 [github.com], #5855 [github.com])
+- Set default background color to dark gray (#6807 [github.com])
+- Display disconnected icon before closing (#6662 [github.com], #6651 [github.com])
+- Add F11 as fullscreen shortcut (#6777 [github.com])
+- Add Mod+q shortcut to quit (#6780 [github.com], #6612 [github.com])
+- Fix Meta Quest flickering (#5913 [github.com])
+- Fix physical vs logical size confusion (#6772 [github.com])
+- Fix copy-paste on rooted device (#6224 [github.com])
+- Fix colorspace conversion issue (#1868 [github.com])
+- Fix high CPU usage with audio silence decoded from OPUS (#6715 [github.com])
+- Add session metadata for the video stream (#6159 [github.com])
+- Respect video capabilities constraints (#6766 [github.com])
+- Set Windows console code page to UTF-8 (#6663 [github.com])
+- Fix support for device serial containing spaces (#6663 [github.com], #6664 [github.com], #3537 [github.com])
+- Detect TCP devices provided by mDNS (#6665 [github.com], #6248 [github.com])
+- Keep Windows terminal open on error (#6667 [github.com])
+- Set MediaCodec KEY_PRIORITY and KEY_LATENCY to minimum values (#6670 [github.com])
+- Open the scrcpy window earlier (#6694 [github.com], #6546 [github.com])
+- Fix device rotation shortcut (5fedc79 [github.com])
+- Use optimal size alignment (#6746 [github.com], #4949 [github.com], #6236 [github.com])
+- Add --min-size-alignment (#6746 [github.com])
+- Fix screensaver disabled unexpectedly without video playback (#6754 [github.com])
+- Add --no-window-aspect-ratio-lock (#6761 [github.com])
+- Fix rotation of square displays (#6770 [github.com])
+- Align the virtual display size (#6771 [github.com])
+- Add --render-fit (#6772 [github.com])
+- Set default audio-output-buffer to 10ms (#6775 [github.com], #3793 [github.com])
+- Fix turning virtual display on via right-click (#6788 [github.com])
+- Fix OpenGL runner shutdown deadlock (#6794 [github.com])
+- Share SDL hints between normal and OTG modes (#6809 [github.com], #6808 [github.com])
+- Upgrade platform-tools (adb) to 37.0.0
+- Upgrade FFmpeg to 8.1.1 (#6715 [github.com])
+- Upgrade SDL to 3.4.8
+- Upgrade dav1d to 1.5.3
+- Various technical fixes
+
 * Thu Dec 18 2025 Udo Seidel <udoseidel@gmx.de> 3.3.4-1
 - Fix permission denial error after Android upgrade (#6523 [github.com])
 - Fix state restoration on certain devices (#6405 [github.com], #6540 [github.com])
