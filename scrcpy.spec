@@ -17,7 +17,7 @@ BuildRequires:  meson gcc cmake
 BuildRequires:  java-devel >= 11
 BuildRequires:  libusb1-devel ffmpeg-devel
 
-BuildRequires:  pkgconfig(sdl2)
+BuildRequires:  pkgconfig(sdl3)
 BuildRequires:  pkgconfig(ffms2)
 BuildRequires:  pkgconfig(libusb-1.0)
 
@@ -209,7 +209,7 @@ connected on USB (or over TCP/IP).
 - Upgrade SDL to 2.30.7 in Windows releases
 -  Various technical fixes
 
-* Thu Aug 03 2024 Udo Seidel <udoseidel@gmx.de> 2.6.1-1
+* Sat Aug 03 2024 Udo Seidel <udoseidel@gmx.de> 2.6.1-1
 - Inject finger input whenever possible (#5162 [github.com], #5163
 
 * Thu Aug 01 2024 Udo Seidel <udoseidel@gmx.de> 2.6-1
