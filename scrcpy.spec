@@ -46,7 +46,7 @@ connected on USB (or over TCP/IP).
 %{_bindir}/%{pkgname}
 %{_datadir}/%{pkgname}
 %{_mandir}/man1/%{pkgname}.1*
-%{_datadir}/icons/hicolor/*/apps/%{pkgname}.png
+%{_datadir}/icons/hicolor/*/apps/*.png
 %{_datadir}/bash-completion/completions/%{pkgname}
 %{_datadir}/zsh/site-functions/_%{pkgname}
 %{_datadir}/applications/%{pkgname}*.desktop
