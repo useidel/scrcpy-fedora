@@ -1,6 +1,6 @@
 %define         pkgname         scrcpy
 %global         forgeurl        https://github.com/Genymobile/%{pkgname}
-Version:        4.0
+Version:        4.1
 
 %forgemeta -i
 
@@ -53,6 +53,23 @@ connected on USB (or over TCP/IP).
 
 
 %changelog
+* Mon Jul 13 2026 Udo Seidel <udoseidel@gmx.de> 4.1-1
+- Add support for VP8 and VP9 video encoders (#6763 [github.com], #6769 [github.com])
+- Update terminal title while scrcpy is running (#6825 [github.com])
+- Trigger media scan after file push (#6200 [github.com], #6852 [github.com])
+- Add Keywords to desktop entries (#6889 [github.com])
+- Adapt the camera target size to avoid configuration error (#6919 [github.com], #6922 [github.com])
+- Improve the size constraints algorithm (#6829 [github.com], #6859 [github.com])
+- Apply encoder size constraints only after the first failure (#6848 [github.com], #6859 [github.com])
+- Add --ignore-video-encoder-constraints (#6904 [github.com])
+- Fix some colorspace conversions (#6830 [github.com], #6924 [github.com])
+- Fix initial gamepad detection (#6843 [github.com], #6853 [github.com])
+- Fix data race possibly causing a division-by-zero error (#6905 [github.com], #6911 [github.com])
+- Upgrade FFmpeg to 8.1.2
+- Upgrade SDL to 3.4.12
+- Upgrade libusb to 1.0.30
+- Various technical fixes
+
 * Wed May 13 2026 Udo Seidel <udoseidel@gmx.de> 4.0-1
 - Migrate from SDL2 to SDL3 (#6216 [github.com])
 - Add flex display support (#6772 [github.com])
