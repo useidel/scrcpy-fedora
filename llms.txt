@@ -1,0 +1,26 @@
+# scrcpy-fedora
+
+> Fedora RPM packaging experiments for scrcpy.
+
+The repository contains a Fedora SPEC file and build automation for scrcpy RPMs. The documented build uses RPM Fusion and OpenH264 repositories and can run through GitHub Actions and Copr.
+
+## Repository overview
+
+- [Source repository](https://github.com/useidel/scrcpy-fedora): Canonical GitHub repository, including source files, issues, history, and repository metadata.
+- [README](https://raw.githubusercontent.com/useidel/scrcpy-fedora/HEAD/README.md): Primary project documentation and usage notes.
+
+## Topics
+
+- Fedora/RPM packaging
+- scrcpy
+- GitHub Actions
+- Copr
+
+## Additional resources
+
+- [GitHub Actions](https://github.com/useidel/scrcpy-fedora/actions)
+
+## Optional
+
+- [Repository activity](https://github.com/useidel/scrcpy-fedora/commits): Commit history for implementation changes and maintenance context.
+- [Issues](https://github.com/useidel/scrcpy-fedora/issues): Questions, bug reports, and project discussions when enabled.
