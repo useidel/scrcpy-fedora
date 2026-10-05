@@ -1,6 +1,6 @@
 %define         pkgname         scrcpy
 %global         forgeurl        https://github.com/Genymobile/%{pkgname}
-Version:        4.1
+Version:        5.0
 
 %forgemeta -i
 
@@ -53,6 +53,24 @@ connected on USB (or over TCP/IP).
 
 
 %changelog
+* Mon Oct 05 2026 Udo Seidel <udoseidel@gmx.de> 5.0-1
+- Add hardware decoding (#7057 [github.com], #7001 [github.com], #1894 [github.com], #1672 [github.com])
+- Improve video buffering (#7057 [github.com])
+- Capture all audio usages in audio playback capture mode (#6975 [github.com])
+- Use ANDROID_SERIAL in OTG mode (#7053 [github.com])
+- Build Windows ARM64 releases (#6857 [github.com])
+- Fix dropped keys in UHID for some keyboard layouts (#6983 [github.com], #6990 [github.com])
+- Fix AltGr forwarding on some layouts (#7050 [github.com], #7051 [github.com])
+- Fix --time-limit data race (#7029 [github.com])
+- Fix --no-mipmaps
+- Avoid "camera capture failed" warnings on stop (#7018 [github.com])
+- Generate mipmaps for all YV12 planes (#7034 [github.com])
+- Upgrade platform-tools (adb) to 37.0.1
+- Upgrade FFmpeg to 9.0.2
+- Upgrade SDL to 3.4.18
+- Upgrade dav1d to 1.5.4
+- Various technical fixes
+
 * Mon Jul 13 2026 Udo Seidel <udoseidel@gmx.de> 4.1-1
 - Add support for VP8 and VP9 video encoders (#6763 [github.com], #6769 [github.com])
 - Update terminal title while scrcpy is running (#6825 [github.com])
