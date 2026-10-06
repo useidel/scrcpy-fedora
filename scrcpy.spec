@@ -15,7 +15,7 @@ Source1:        https://github.com/Genymobile/%{pkgname}/releases/download/v%{ve
 
 BuildRequires:  meson gcc cmake
 BuildRequires:  java-devel >= 11
-BuildRequires:  libusb1-devel ffmpeg-devel
+BuildRequires:  libusb1-devel ffmpeg-devel libdrm
 
 BuildRequires:  pkgconfig(sdl3)
 BuildRequires:  pkgconfig(ffms2)
@@ -70,6 +70,7 @@ connected on USB (or over TCP/IP).
 - Upgrade SDL to 3.4.18
 - Upgrade dav1d to 1.5.4
 - Various technical fixes
+- libdrm as new required library
 
 * Mon Jul 13 2026 Udo Seidel <udoseidel@gmx.de> 4.1-1
 - Add support for VP8 and VP9 video encoders (#6763 [github.com], #6769 [github.com])
