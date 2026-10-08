@@ -1,6 +1,6 @@
 %define         pkgname         scrcpy
 %global         forgeurl        https://github.com/Genymobile/%{pkgname}
-Version:        5.0
+Version:        5.0.1
 
 %forgemeta -i
 
@@ -53,6 +53,12 @@ connected on USB (or over TCP/IP).
 
 
 %changelog
+* Thu Oct 08 2026 Udo Seidel <udoseidel@gmx.de> 5.0.1-1
+- Accept DRM_FORMAT_RG88 for NV12 chroma plane (#7070 [github.com], #7073 [github.com])
+- Fix H.265 hardware decoding on Windows (#7072 [github.com])
+- Use the GPU of the renderer for VA-API decoding (#7075 [github.com], #7081 [github.com])
+- Force EGL only if VA-API is enabled (#7079 [github.com])
+
 * Mon Oct 05 2026 Udo Seidel <udoseidel@gmx.de> 5.0-1
 - Add hardware decoding (#7057 [github.com], #7001 [github.com], #1894 [github.com], #1672 [github.com])
 - Improve video buffering (#7057 [github.com])
